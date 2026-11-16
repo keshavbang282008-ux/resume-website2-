@@ -15,8 +15,16 @@
 </head>
 <body>
 
+  <!-- Looping video background (muted so browsers allow autoplay) -->
+  <div class="video-bg">
+    <video autoplay muted loop playsinline preload="auto" poster="poster.jpg">
+      <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
   <!-- Sticky navigation bar -->
-  <nav class="navbar">
+  <nav class="navbar glass">
     <a class="brand" href="#top">Keshav Bang</a>
     <ul class="nav-links">
       <li><a href="#contact">Contact</a></li>
@@ -27,7 +35,7 @@
   </nav>
 
   <!-- Hero section -->
-  <header id="top" class="hero">
+  <header id="top" class="hero glass">
     <img class="profile-photo" src="photo.jpg" alt="Photo of Keshav Bang" width="200" height="200">
     <div class="hero-text">
       <h1>Keshav Bang</h1>
@@ -40,7 +48,7 @@
 
   <main>
 
-    <section id="contact">
+    <section id="contact" class="glass panel">
       <h2>Contact</h2>
       <address class="card contact-card">
         <p><strong>Address:</strong> [Your address here]</p>
@@ -48,7 +56,7 @@
       </address>
     </section>
 
-    <section id="education">
+    <section id="education" class="glass panel">
       <h2>Education</h2>
       <div class="card-row">
         <article class="card">
@@ -62,7 +70,7 @@
       </div>
     </section>
 
-    <section id="hobbies">
+    <section id="hobbies" class="glass panel">
       <h2>Hobbies</h2>
       <ul class="chips">
         <li>Reading</li>
@@ -72,7 +80,7 @@
       </ul>
     </section>
 
-    <section id="extracurriculars">
+    <section id="extracurriculars" class="glass panel">
       <h2>Extracurriculars</h2>
       <div class="card-row">
         <article class="card">
@@ -88,7 +96,7 @@
 
   </main>
 
-  <footer>
+  <footer class="glass">
     <p>&copy; 2026 Keshav Bang</p>
   </footer>
 
